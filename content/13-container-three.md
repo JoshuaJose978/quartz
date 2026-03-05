@@ -1,5 +1,5 @@
 ---
-title: Docker Fundamentals Part 3
+title: Docker Fundamentals - Chapter 3
 slug: docker-3
 created: 2025-07-06
 ---
