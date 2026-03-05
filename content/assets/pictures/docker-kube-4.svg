@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333333">When to Use Docker vs. Kubernetes</text>
+  
+  <!-- Vertical Decision Axis -->
+  <line x1="400" y1="100" x2="400" y2="550" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Docker Section -->
+  <rect x="50" y="100" width="300" height="450" rx="10" fill="#F7FBFF" stroke="#D0E0FF" stroke-width="2"/>
+  <text x="200" y="130" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#2496ED">DOCKER</text>
+  <text x="200" y="160" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic" fill="#333333">Simpler is Better</text>
+  
+  <!-- Kubernetes Section -->
+  <rect x="450" y="100" width="300" height="450" rx="10" fill="#F7FBFF" stroke="#D0E0FF" stroke-width="2"/>
+  <text x="600" y="130" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#326CE5">KUBERNETES</text>
+  <text x="600" y="160" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic" fill="#333333">For Complex Needs</text>
+  
+  <!-- Docker Use Cases -->
+  <rect x="80" y="190" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="200" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Single server environment</text>
+  
+  <rect x="80" y="250" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Development environments</text>
+  
+  <rect x="80" y="310" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="200" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Simple applications</text>
+  
+  <rect x="80" y="370" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="200" y="400" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Small teams</text>
+  
+  <rect x="80" y="430" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="200" y="460" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Learning containerization</text>
+  
+  <!-- Kubernetes Use Cases -->
+  <rect x="480" y="190" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="600" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Multiple servers/cluster</text>
+  
+  <rect x="480" y="250" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="600" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Production-grade deployment</text>
+  
+  <rect x="480" y="310" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="600" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Auto-scaling requirements</text>
+  
+  <rect x="480" y="370" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="600" y="400" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Microservices architecture</text>
+  
+  <rect x="480" y="430" width="240" height="50" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="600" y="460" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">High availability requirements</text>
+  
+  <!-- Bottom Labels -->
+  <text x="200" y="510" font-family="Arial" font-size="16" text-anchor="middle" fill="#2496ED" font-weight="bold">Lower Complexity</text>
+  <text x="200" y="530" font-family="Arial" font-size="16" text-anchor="middle" fill="#2496ED">Better Performance on Single Host</text>
+  
+  <text x="600" y="510" font-family="Arial" font-size="16" text-anchor="middle" fill="#326CE5" font-weight="bold">Higher Complexity</text>
+  <text x="600" y="530" font-family="Arial" font-size="16" text-anchor="middle" fill="#326CE5">Better for Multiple Hosts</text>
+</svg>

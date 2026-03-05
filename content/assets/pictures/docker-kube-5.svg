@@ -1,0 +1,130 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333333">Docker vs. Kubernetes Decision Flow</text>
+
+  <!-- Start -->
+  <rect x="300" y="80" width="200" height="60" rx="30" fill="#F0F5FF" stroke="#326CE5" stroke-width="2"/>
+  <text x="400" y="115" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Start</text>
+  
+  <!-- First Question -->
+  <rect x="250" y="180" width="300" height="70" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="400" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Do you need to deploy across</text>
+  <text x="400" y="235" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">multiple servers/nodes?</text>
+  
+  <!-- Connect Start to Question -->
+  <line x1="400" y1="140" x2="400" y2="180" stroke="#333333" stroke-width="2"/>
+  <polygon points="400,180 395,170 405,170" fill="#333333"/>
+  
+  <!-- Yes/No Paths -->
+  <line x1="550" y1="215" x2="650" y2="215" stroke="#333333" stroke-width="2"/>
+  <polygon points="650,215 640,210 640,220" fill="#333333"/>
+  <text x="580" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Yes</text>
+  
+  <line x1="250" y1="215" x2="150" y2="215" stroke="#333333" stroke-width="2"/>
+  <polygon points="150,215 160,210 160,220" fill="#333333"/>
+  <text x="220" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">No</text>
+  
+  <!-- K8s Box -->
+  <rect x="650" y="185" width="100" height="60" rx="5" fill="#326CE5" stroke="#2254ab" stroke-width="2"/>
+  <text x="700" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="700" y="235" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Kubernetes</text>
+  
+  <!-- Second Question -->
+  <rect x="250" y="290" width="300" height="70" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="400" y="325" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Do you need auto-scaling or</text>
+  <text x="400" y="345" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">high availability features?</text>
+  
+  <!-- Connect First to Second Question -->
+  <line x1="400" y1="250" x2="400" y2="290" stroke="#333333" stroke-width="2"/>
+  <polygon points="400,290 395,280 405,280" fill="#333333"/>
+  
+  <!-- Yes/No Paths -->
+  <line x1="550" y1="325" x2="650" y2="325" stroke="#333333" stroke-width="2"/>
+  <polygon points="650,325 640,320 640,330" fill="#333333"/>
+  <text x="580" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Yes</text>
+  
+  <line x1="250" y1="325" x2="150" y2="325" stroke="#333333" stroke-width="2"/>
+  <polygon points="150,325 160,320 160,330" fill="#333333"/>
+  <text x="220" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">No</text>
+  
+  <!-- K8s Box -->
+  <rect x="650" y="295" width="100" height="60" rx="5" fill="#326CE5" stroke="#2254ab" stroke-width="2"/>
+  <text x="700" y="325" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="700" y="345" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Kubernetes</text>
+  
+  <!-- Third Question -->
+  <rect x="250" y="400" width="300" height="70" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="400" y="435" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Is your application complex with</text>
+  <text x="400" y="455" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">many microservices?</text>
+  
+  <!-- Connect Second to Third Question -->
+  <line x1="400" y1="360" x2="400" y2="400" stroke="#333333" stroke-width="2"/>
+  <polygon points="400,400 395,390 405,390" fill="#333333"/>
+  
+  <!-- Yes/No Paths -->
+  <line x1="550" y1="435" x2="650" y2="435" stroke="#333333" stroke-width="2"/>
+  <polygon points="650,435 640,430 640,440" fill="#333333"/>
+  <text x="580" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Yes</text>
+  
+  <line x1="250" y1="435" x2="150" y2="435" stroke="#333333" stroke-width="2"/>
+  <polygon points="150,435 160,430 160,440" fill="#333333"/>
+  <text x="220" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">No</text>
+  
+  <!-- K8s Box -->
+  <rect x="650" y="405" width="100" height="60" rx="5" fill="#326CE5" stroke="#2254ab" stroke-width="2"/>
+  <text x="700" y="435" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="700" y="455" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Kubernetes</text>
+  
+  <!-- Fourth Question -->
+  <rect x="250" y="510" width="300" height="70" rx="5" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="400" y="545" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Do you have the expertise and</text>
+  <text x="400" y="565" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">resources to manage Kubernetes?</text>
+  
+  <!-- Connect Third to Fourth Question -->
+  <line x1="400" y1="470" x2="400" y2="510" stroke="#333333" stroke-width="2"/>
+  <polygon points="400,510 395,500 405,500" fill="#333333"/>
+  
+  <!-- Yes/No Paths -->
+  <line x1="550" y1="545" x2="650" y2="545" stroke="#333333" stroke-width="2"/>
+  <polygon points="650,545 640,540 640,550" fill="#333333"/>
+  <text x="580" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Yes</text>
+  
+  <line x1="250" y1="545" x2="150" y2="545" stroke="#333333" stroke-width="2"/>
+  <polygon points="150,545 160,540 160,550" fill="#333333"/>
+  <text x="220" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">No</text>
+  
+  <!-- Decision Boxes -->
+  <rect x="600" y="620" width="200" height="60" rx="5" fill="#326CE5" stroke="#2254ab" stroke-width="2"/>
+  <text x="700" y="655" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Use Kubernetes</text>
+  
+  <rect x="300" y="620" width="200" height="60" rx="5" fill="#2496ED" stroke="#1d81ce" stroke-width="2"/>
+  <text x="400" y="655" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Use Docker Compose</text>
+  
+  <rect x="0" y="620" width="200" height="60" rx="5" fill="#2496ED" stroke="#1d81ce" stroke-width="2"/>
+  <text x="100" y="655" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Use Docker</text>
+  
+  <!-- Connect Fourth to Decisions -->
+  <line x1="650" y1="545" x2="700" y2="545" stroke="#333333" stroke-width="2"/>
+  <line x1="700" y1="545" x2="700" y2="620" stroke="#333333" stroke-width="2"/>
+  <polygon points="700,620 695,610 705,610" fill="#333333"/>
+  
+  <line x1="400" y1="580" x2="400" y2="620" stroke="#333333" stroke-width="2"/>
+  <polygon points="400,620 395,610 405,610" fill="#333333"/>
+  
+  <line x1="150" y1="545" x2="100" y2="545" stroke="#333333" stroke-width="2"/>
+  <line x1="100" y1="545" x2="100" y2="620" stroke="#333333" stroke-width="2"/>
+  <polygon points="100,620 95,610 105,610" fill="#333333"/>
+  
+  <!-- Docker Box -->
+  <rect x="50" y="185" width="100" height="60" rx="5" fill="#2496ED" stroke="#1d81ce" stroke-width="2"/>
+  <text x="100" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="100" y="235" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Docker</text>
+  
+  <rect x="50" y="295" width="100" height="60" rx="5" fill="#2496ED" stroke="#1d81ce" stroke-width="2"/>
+  <text x="100" y="325" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="100" y="345" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Docker</text>
+  
+  <rect x="50" y="405" width="100" height="60" rx="5" fill="#2496ED" stroke="#1d81ce" stroke-width="2"/>
+  <text x="100" y="435" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Consider</text>
+  <text x="100" y="455" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Docker</text>
+</svg>
