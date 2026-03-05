@@ -5,47 +5,6 @@ title: SearXNG API Documentation and Usage Guide
 
 SearXNG is a privacy-respecting metasearch engine that allows you to search across multiple sources. This guide provides comprehensive examples for interacting with SearXNG via its API, with practical examples tailored to specific search engines and categories.
 
-## Table of Contents
-
-- [[#Basic API Usage|Basic API Usage]]
-	- [[#Basic API Usage#GET Request Format|GET Request Format]]
-	- [[#Basic API Usage#POST Request Format (for complex queries)|POST Request Format (for complex queries)]]
-- [[#Core Parameters|Core Parameters]]
-- [[#Category-Specific Examples|Category-Specific Examples]]
-	- [[#Category-Specific Examples#Web Search Examples|Web Search Examples]]
-		- [[#Web Search Examples#1. Basic Web Search with Popular Engines|1. Basic Web Search with Popular Engines]]
-		- [[#Web Search Examples#2. Web Search with Safe Search Enabled|2. Web Search with Safe Search Enabled]]
-		- [[#Web Search Examples#3. Localized Search with Regional Results|3. Localized Search with Regional Results]]
-	- [[#Category-Specific Examples#Image Search Examples|Image Search Examples]]
-		- [[#Image Search Examples#1. Finding Free-to-Use Images|1. Finding Free-to-Use Images]]
-		- [[#Image Search Examples#2. Comprehensive Image Search Across Multiple Engines|2. Comprehensive Image Search Across Multiple Engines]]
-		- [[#Image Search Examples#3. Stock Image Search for Commercial Use|3. Stock Image Search for Commercial Use]]
-	- [[#Category-Specific Examples#Video Search Examples|Video Search Examples]]
-		- [[#Video Search Examples#1. Search Across Alternative Video Platforms|1. Search Across Alternative Video Platforms]]
-		- [[#Video Search Examples#2. Family-Friendly Video Search|2. Family-Friendly Video Search]]
-		- [[#Video Search Examples#3. Recent Video Content with Time Range|3. Recent Video Content with Time Range]]
-	- [[#Category-Specific Examples#News Search Examples|News Search Examples]]
-		- [[#News Search Examples#1. Recent News from Multiple Sources|1. Recent News from Multiple Sources]]
-		- [[#News Search Examples#2. Financial News with Time Filter|2. Financial News with Time Filter]]
-		- [[#News Search Examples#3. News in a Specific Language|3. News in a Specific Language]]
-	- [[#Category-Specific Examples#Academic & Scientific Search Examples|Academic & Scientific Search Examples]]
-		- [[#Academic & Scientific Search Examples#1. Research Paper Search|1. Research Paper Search]]
-		- [[#Academic & Scientific Search Examples#2. Medical Research Query|2. Medical Research Query]]
-		- [[#Academic & Scientific Search Examples#3. Open Access Dataset Search|3. Open Access Dataset Search]]
-	- [[#Category-Specific Examples#IT & Development Examples|IT & Development Examples]]
-		- [[#IT & Development Examples#1. Software Development Q&A Search|1. Software Development Q&A Search]]
-		- [[#IT & Development Examples#2. Code Repository Search|2. Code Repository Search]]
-		- [[#IT & Development Examples#3. Package Registry Search|3. Package Registry Search]]
-- [[#Advanced Use Cases|Advanced Use Cases]]
-	- [[#Advanced Use Cases#1. Multi-Category Search (Web + News + Scientific)|1. Multi-Category Search (Web + News + Scientific)]]
-	- [[#Advanced Use Cases#2. Combining Translations with Search|2. Combining Translations with Search]]
-	- [[#Advanced Use Cases#3. Map Search for Location Data|3. Map Search for Location Data]]
-	- [[#Advanced Use Cases#4. Music and Audio Search|4. Music and Audio Search]]
-	- [[#Advanced Use Cases#5. Social Media Search|5. Social Media Search]]
-- [[#Troubleshooting|Troubleshooting]]
-	- [[#Troubleshooting#Common Issues and Solutions|Common Issues and Solutions]]
-	- [[#Troubleshooting#Example: Error Handling Script|Example: Error Handling Script]]
-
 ## Basic API Usage
 
 ### GET Request Format
