@@ -6,43 +6,6 @@ created: 2025-07-06
 
 # Docker in Detail: CLI, Dockerfiles, and Docker Compose
 
-### Table of Contents
-
-- [[#1. Docker Architecture Overview|1. Docker Architecture Overview]]
-	- [[#1. Docker Architecture Overview#Key Components:|Key Components:]]
-- [[#2. Essential Docker CLI Commands|2. Essential Docker CLI Commands]]
-	- [[#2. Essential Docker CLI Commands#Image Management Commands|Image Management Commands]]
-	- [[#2. Essential Docker CLI Commands#Container Lifecycle Commands|Container Lifecycle Commands]]
-	- [[#2. Essential Docker CLI Commands#Container Inspection and Logs|Container Inspection and Logs]]
-	- [[#2. Essential Docker CLI Commands#Network Commands|Network Commands]]
-	- [[#2. Essential Docker CLI Commands#Volume Commands|Volume Commands]]
-	- [[#2. Essential Docker CLI Commands#System Management Commands|System Management Commands]]
-- [[#3. Dockerfile: Building Custom Images|3. Dockerfile: Building Custom Images]]
-	- [[#3. Dockerfile: Building Custom Images#Dockerfile Instructions|Dockerfile Instructions]]
-	- [[#3. Dockerfile: Building Custom Images#Common Dockerfile Instructions|Common Dockerfile Instructions]]
-	- [[#3. Dockerfile: Building Custom Images#Example 1: Node.js Application Dockerfile|Example 1: Node.js Application Dockerfile]]
-	- [[#3. Dockerfile: Building Custom Images#Example 2: Multi-stage Build for Go Application|Example 2: Multi-stage Build for Go Application]]
-	- [[#3. Dockerfile: Building Custom Images#Example 3: Python Flask Application|Example 3: Python Flask Application]]
-	- [[#3. Dockerfile: Building Custom Images#Building and Using Docker Images|Building and Using Docker Images]]
-- [[#4. Docker Compose: Multi-Container Applications|4. Docker Compose: Multi-Container Applications]]
-	- [[#4. Docker Compose: Multi-Container Applications#Docker Compose File Structure|Docker Compose File Structure]]
-	- [[#4. Docker Compose: Multi-Container Applications#Example 1: WordPress with MySQL|Example 1: WordPress with MySQL]]
-	- [[#4. Docker Compose: Multi-Container Applications#Example 2: Microservices Application|Example 2: Microservices Application]]
-	- [[#4. Docker Compose: Multi-Container Applications#Example 3: Development Environment|Example 3: Development Environment]]
-	- [[#4. Docker Compose: Multi-Container Applications#Docker Compose Commands|Docker Compose Commands]]
-	- [[#4. Docker Compose: Multi-Container Applications#Advanced Docker Compose Features|Advanced Docker Compose Features]]
-		- [[#Advanced Docker Compose Features#Override Files|Override Files]]
-		- [[#Advanced Docker Compose Features#Using .env Files|Using .env Files]]
-- [[#5. Best Practices|5. Best Practices]]
-	- [[#5. Best Practices#Dockerfile Best Practices|Dockerfile Best Practices]]
-	- [[#5. Best Practices#Docker Compose Best Practices|Docker Compose Best Practices]]
-- [[#6. Chapter Summary|6. Chapter Summary]]
-	- [[#6. Chapter Summary#Hands-on Exercises:|Hands-on Exercises:]]
-	- [[#6. Chapter Summary#Next Steps:|Next Steps:]]
-
-
----
-
 ## 1. Docker Architecture Overview
 
 Before diving into commands and tools, let's understand Docker's core components:
