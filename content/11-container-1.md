@@ -1,6 +1,6 @@
 ---
 title: Docker Fundamentals - Chapter 1
-slug: custom-title-note
+slug: docker-1
 created: 2025-07-06
 ---
 
