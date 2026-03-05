@@ -1,6 +1,6 @@
 ---
 title: SearXNG API Documentation and Usage Guide
-slug: custom-title-note
+slug: custom-searxng
 created: 2025-07-06
 ---
 
