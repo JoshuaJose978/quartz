@@ -5,56 +5,6 @@ created: 2025-07-06
 ---
 # Container Orchestration with Docker Swarm
 
-### Table of Contents
-
-- [[#1. Introduction to Container Orchestration|1. Introduction to Container Orchestration]]
-	- [[#1. Introduction to Container Orchestration#Why Container Orchestration?|Why Container Orchestration?]]
-	- [[#1. Introduction to Container Orchestration#Key Benefits of Orchestration:|Key Benefits of Orchestration:]]
-- [[#2. Docker Swarm Architecture|2. Docker Swarm Architecture]]
-	- [[#2. Docker Swarm Architecture#Swarm Components|Swarm Components]]
-	- [[#2. Docker Swarm Architecture#Key Concepts:|Key Concepts:]]
-- [[#3. Setting Up a Docker Swarm Cluster|3. Setting Up a Docker Swarm Cluster]]
-	- [[#3. Setting Up a Docker Swarm Cluster#Prerequisites|Prerequisites]]
-	- [[#3. Setting Up a Docker Swarm Cluster#Initialize Swarm on First Manager|Initialize Swarm on First Manager]]
-	- [[#3. Setting Up a Docker Swarm Cluster#Join Nodes to Swarm|Join Nodes to Swarm]]
-	- [[#3. Setting Up a Docker Swarm Cluster#Node Management|Node Management]]
-- [[#4. Deploying Services in Swarm|4. Deploying Services in Swarm]]
-	- [[#4. Deploying Services in Swarm#Creating Services|Creating Services]]
-	- [[#4. Deploying Services in Swarm#Service Templates with Stack Deploy|Service Templates with Stack Deploy]]
-	- [[#4. Deploying Services in Swarm#Managing Services|Managing Services]]
-- [[#5. Scaling and Load Balancing|5. Scaling and Load Balancing]]
-	- [[#5. Scaling and Load Balancing#Horizontal Scaling|Horizontal Scaling]]
-	- [[#5. Scaling and Load Balancing#Load Balancing|Load Balancing]]
-		- [[#Load Balancing#1. Internal Load Balancing (Service Discovery)|1. Internal Load Balancing (Service Discovery)]]
-		- [[#Load Balancing#2. External Load Balancing (Ingress Routing Mesh)|2. External Load Balancing (Ingress Routing Mesh)]]
-	- [[#5. Scaling and Load Balancing#Configure Load Balancing|Configure Load Balancing]]
-- [[#6. Managing Secrets and Configs|6. Managing Secrets and Configs]]
-	- [[#6. Managing Secrets and Configs#Docker Secrets|Docker Secrets]]
-	- [[#6. Managing Secrets and Configs#Docker Configs|Docker Configs]]
-	- [[#6. Managing Secrets and Configs#Example: WordPress with Secrets|Example: WordPress with Secrets]]
-- [[#7. Swarm Networking|7. Swarm Networking]]
-	- [[#7. Swarm Networking#Network Types in Swarm|Network Types in Swarm]]
-	- [[#7. Swarm Networking#Creating and Managing Networks|Creating and Managing Networks]]
-	- [[#7. Swarm Networking#Network Architecture|Network Architecture]]
-	- [[#7. Swarm Networking#Service Discovery|Service Discovery]]
-- [[#8. High Availability and Fault Tolerance|8. High Availability and Fault Tolerance]]
-	- [[#8. High Availability and Fault Tolerance#Manager High Availability|Manager High Availability]]
-	- [[#8. High Availability and Fault Tolerance#Implementing HA|Implementing HA]]
-	- [[#8. High Availability and Fault Tolerance#Health Checks|Health Checks]]
-	- [[#8. High Availability and Fault Tolerance#Rolling Updates with Rollback|Rolling Updates with Rollback]]
-	- [[#8. High Availability and Fault Tolerance#Backup Swarm Configuration|Backup Swarm Configuration]]
-- [[#9. Monitoring and Maintenance|9. Monitoring and Maintenance]]
-	- [[#9. Monitoring and Maintenance#Built-in Monitoring Commands|Built-in Monitoring Commands]]
-	- [[#9. Monitoring and Maintenance#Prometheus + Grafana Stack Example|Prometheus + Grafana Stack Example]]
-	- [[#9. Monitoring and Maintenance#Maintenance Tasks|Maintenance Tasks]]
-- [[#10. Chapter Summary|10. Chapter Summary]]
-	- [[#10. Chapter Summary#Key Takeaways:|Key Takeaways:]]
-	- [[#10. Chapter Summary#When to Use Docker Swarm:|When to Use Docker Swarm:]]
-	- [[#10. Chapter Summary#Practice Exercises:|Practice Exercises:]]
-	- [[#10. Chapter Summary#Next Steps:|Next Steps:]]
-
----
-
 ## 1. Introduction to Container Orchestration
 
 Container orchestration automates the deployment, management, scaling, and networking of containers. While Docker Compose is great for single-host deployments, production environments need more robust solutions.
