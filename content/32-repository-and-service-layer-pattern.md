@@ -1,5 +1,5 @@
 ---
-title: Repository + Service Layer Pattern: Clean Architecture for Backend Systems
+title: Repository + Service Layer Pattern (Clean Architecture for Backend Systems)
 ---
 
 # Repository + Service Layer Pattern: Clean Architecture for Backend Systems

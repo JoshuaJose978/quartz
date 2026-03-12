@@ -1,5 +1,5 @@
 ---
-title: MVC/MVVM Pattern: The Foundation of Modern Application Architecture
+title: MVC/MVVM Pattern (The Foundation of Modern Application Architecture)
 ---
 
 # MVC/MVVM Pattern: The Foundation of Modern Application Architecture

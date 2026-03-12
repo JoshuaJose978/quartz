@@ -1,5 +1,5 @@
 ---
-title: Redux/Flux Pattern: Predictable State Management for Complex Applications
+title: Redux/Flux Pattern (Predictable State Management for Complex Applications)
 ---
 
 # Redux/Flux Pattern: Predictable State Management for Complex Applications
