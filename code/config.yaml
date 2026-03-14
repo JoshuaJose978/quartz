@@ -1,0 +1,77 @@
+# ============================================================
+# classify_notes pipeline — configuration
+# ============================================================
+# Edit this file to change categories, paths, and behaviour.
+# The main script (classify_notes.py) never needs to be touched
+# for routine reconfiguration.
+
+# ----------------------------------------------------------
+# Input directories (relative to CWD or absolute)
+# ----------------------------------------------------------
+input_roots:
+  - idc_ai_engineering_markdown_docs
+  - JoshStrategyWorkVault
+
+# ----------------------------------------------------------
+# Output directory for artifacts
+# ----------------------------------------------------------
+output_dir: classification_output
+
+# ----------------------------------------------------------
+# Model
+# ----------------------------------------------------------
+model_name: "MoritzLaurer/xtremedistil-l6-h256-zeroshot-v1.1-all-33"
+
+# ----------------------------------------------------------
+# Category labels
+# Edit / add / remove entries freely.
+# These become the proposed folder names in the output.
+# ----------------------------------------------------------
+labels:
+  - AI and Machine Learning Engineering
+  - Application Deployment and Infrastructure
+  - Software Architecture and Design Patterns
+  - Python Development and Tooling
+  - System Design and Cloud
+  - Data and Analytics
+  - Web Development
+  - Networking and Security
+  - Career and Professional Development
+  - Work Accomplishments and Monthly Reviews
+  - Business Strategy and Intelligence
+  - Research and Statistics
+  - Personal Notes
+
+# ----------------------------------------------------------
+# Classification settings
+# ----------------------------------------------------------
+# multi_label: false = pick exactly one best label per file
+# multi_label: true  = allow multiple labels above threshold
+multi_label: false
+
+# Minimum confidence to assign a label; files below this
+# fall into "Uncategorized"
+confidence_threshold: 0.20
+
+# ----------------------------------------------------------
+# Text sampling
+# ----------------------------------------------------------
+# How much text to feed to the model per file.
+# max_chars: hard cap on characters sent (truncation is safe
+#            for this model — max sequence length is 512 tokens)
+# max_lines: alternatively cap by non-empty lines (0 = disabled)
+# skip_frontmatter: strip YAML front-matter (--- ... ---) blocks
+max_chars: 1500
+max_lines: 0
+skip_frontmatter: true
+
+# ----------------------------------------------------------
+# Reproducibility
+# ----------------------------------------------------------
+random_seed: 42
+
+# ----------------------------------------------------------
+# Link suggestions
+# ----------------------------------------------------------
+# Maximum number of same-category peers to suggest as links
+max_link_suggestions: 5
